@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Trash can</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+<div class="container">
+  <h1 id="title">Đồ án 3</h1>
+<div class="main">
+  <div class="box">
+    <svg xmlns="http://www.w3.org/2000/svg" class="AnimatedIcon js-Trash" viewBox="0 0 150 138">
+      <path fill="#DDF2F5" d="M65 130c35.899 0 65-29.101 65-65 0-35.898-29.101-65-65-65C29.102 0 0 29.102 0 65c0 35.899 29.102 65 65 65z"/>
+      <g class="js-Trash-group">
+        <path fill="#4482BB" d="M110.063 137.625H48.938l-5.094-86.594h71.313l-5.094 86.594z"/>
+        <path fill="#4482BB" d="M110.063 15.375H48.938l-5.094 25.469h71.312l-5.093-25.469z" />
+        <path fill="#DDF2F5" d="M57.215 33.203h45.844V23.016H57.215v10.187z" />
+        <path fill="#84A6D6" d="M115.156 40.844H43.844a5.094 5.094 0 000 10.187h71.312a5.094 5.094 0 000-10.187" />
+  
+      </g>
+    </svg>
+    <input type="range" min="1" max="100" value="0" id="inputRange" disabled/>
+  </div>
+  <div class="content">
+      <button class="open" id="open" onclick="openTrash();">
+        OPEN
+      </button>
+      <button class="close"  id="close" onclick="closeTrash()">
+        CLOSE
+      </button>
+  </div>
+</div>
+<h2 id="statusTrash">0%</h2>
+</div>
+<!-- partial -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.2/gsap.min.js'></script>
+<script  src="./script.js"></script>
+
+</body>
+</html>

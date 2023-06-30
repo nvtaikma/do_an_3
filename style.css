@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  /* box-sizing: border-box; */
+}
+
+.parent {
+  /* display: flex; */
+  /* width: 100%; */
+  position: relative;
+  height: 100%;
+}
+
+.trapezoid {
+  display: inline-block;
+  ;
+  /* flex-direction: column; */
+  border-bottom: 100vh solid rgb(237, 72, 72);
+  border-left: 50rem solid transparent;
+  /* border-right: 0px solid transparent; */
+  /* margin-left: 13rem; */
+  height: 0px;
+  width: 48%;
+  position: absolute;
+  ;
+  right: 0;
+  text-align: center;
+
+}
+
+.logo img {
+  display: block;
+  width: 20%;
+  position: absolute;
+  top: 70px;
+  left: 70px;
+}
+
+.span1 {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  display: block;
+  width: 48%;
+  background-color: aliceblue;
+  height: 2px;
+  /* margin-top: 25px; */
+  /* padding-left: 20px; */
+}
+
+.span2 {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  display: block;
+  width: 2px;
+  background-color: aliceblue;
+  height: 96vh;
+}
+
+.trapezoid h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  color: #ffff;
+  text-align: center;
+  line-height: 250px
+}
+
+.trapezoid span {
+  left: 35%;
+  position: absolute;
+  display: block;
+  width: 30%;
+  background-color: aliceblue;
+  height: 4px;
+  top: 180px;
+}
+
+.trapezoid h3 {
+  font-size: 3rem;
+  font-weight: 400;
+  color: #ffff;
+  text-align: center;
+  /* line-height: -20px; */
+  margin-top: -40px;
+  padding: 0;
+}
+
+
+form {
+  position: absolute;
+  top: 300px;
+  right: 180px;
+
+  width: 50rem;
+  height: 22rem;
+  background-color: hwb(24deg 84% 2%);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.login-field {
+  display: flex;
+  align-items: center;
+  background-color: hwb(24deg 68% 3%);
+  height: 4.5rem;
+  border-radius: 10px;
+}
+
+.login-icon {
+  color: #344667;
+  font-size: 16px;
+  width: 4.5rem;
+  text-align: center;
+  border-radius: 10px;
+  background-color: hwb(24deg 51% 4%);
+  height: 4.5rem;
+  line-height: 43px;
+
+}
+
+.login-input {
+  border: 0;
+  padding-left: 15px;
+  background-color: hwb(24deg 68% 3%);
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  width: 70%;
+  font-size: 30px;
+}
+
+.buttonIcon {
+  width: 100px;
+  border: none;
+  font-size: 30px;
+  font-weight: 600;
+  color: #757575;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: hwb(24deg 51% 4%);
+}
+
+.buttonIcon:focus {
+  outline: 0 !important;
+}
+
+.text {
+  right: 6rem;
+  top: 10px;
+  position: relative;
+}
+
+
+@media only screen and (max-width: 845px) {
+  .trapezoid {
+    width: 35rem;
+    border-left: 40rem solid transparent;
+  }
+
+  .logo img {
+    width: 12rem;
+    top: 40px;
+    left: 45px;
+  }
+
+  .span3 {
+    top: 400px;
+    right: 25px;
+    width: 84%;
+  }
+
+  .span2 {
+    top: 25px;
+    right: 25px;
+    width: 2px;
+    height: 36rem;
+  }
+
+  .trapezoid h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 157px;
+  }
+
+
+  .trapezoid span {
+    height: 2px;
+    left: 30%;
+    width: 40%;
+    top: 110px;
+  }
+
+  .trapezoid h3 {
+    font-size: 1.5rem;
+    margin-top: -33px;
+  }
+
+  form {
+    top: 200px;
+    right: 7rem;
+    row-gap: 10px;
+    height: 35vh;
+    width: 35rem;
+  }
+
+  .login-field {
+    height: 30px;
+    width: 80%;
+  }
+
+  .login-input {
+    font-size: 20px;
+  }
+
+  .login-icon {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    font-size: 12px;
+  }
+
+  .buttonIcon {
+    font-size: 20px;
+    padding: 3px;
+    border-radius: 5px;
+  }
+
+  .text {
+    right: 7rem;
+    top: 10px;
+    position: relative;
+  }
+}
